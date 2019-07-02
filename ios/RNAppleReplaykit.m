@@ -1,7 +1,7 @@
 
-#import "RNRnAppleReplaykit.h"
+#import "RNAppleReplaykit.h"
 
-@implementation RNRnAppleReplaykit
+@implementation RNAppleReplaykit
 
 - (dispatch_queue_t)methodQueue
 {

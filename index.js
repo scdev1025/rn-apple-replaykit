@@ -1,8 +1,8 @@
 import { NativeModules } from 'react-native';
 
-const { RNRnAppleReplaykit } = NativeModules;
+const { RNAppleReplaykit } = NativeModules;
 
-export const RNAppleReplaykit = {
+export const RNAReplayKit = {
   
   startBroadcast: () => {
     return new Promise((resolve, reject) => {

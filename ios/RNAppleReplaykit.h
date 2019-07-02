@@ -5,7 +5,7 @@
 #import <React/RCTBridgeModule.h>
 #endif
 
-@interface RNRnAppleReplaykit : NSObject <RCTBridgeModule>
+@interface RNAppleReplaykit : NSObject <RCTBridgeModule>
 
 @end
   
