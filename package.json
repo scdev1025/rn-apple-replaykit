@@ -1,20 +1,24 @@
 
 {
-  "name": "react-native-rn-apple-replaykit",
-  "version": "1.0.0",
+  "name": "rn-apple-replaykit",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  },  
+  "jest": {
+    "preset": "react-native",
+    "modulePathIgnorePatterns": [
+      "<rootDir>/example"
+    ]
+},
   "keywords": [
     "react-native"
   ],
   "author": "",
   "license": "",
   "peerDependencies": {
-    "react-native": "^0.41.2",
-    "react-native-windows": "0.41.0-rc.1"
-
+    "react-native": "^0.41.2"
   }
 }

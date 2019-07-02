@@ -2,7 +2,7 @@ import { NativeModules } from 'react-native';
 
 const { RNRnAppleReplaykit } = NativeModules;
 
-export const RNAppleReplaykit = {
+export default RNAppleReplaykit = {
   
   startBroadcast: () => {
     return new Promise((resolve, reject) => {
@@ -11,6 +11,8 @@ export const RNAppleReplaykit = {
   },
 
   stopBroadcast: () => {
-    console.warn('stopBroadcast', 'Not Implemented')
+    return new Promise((resolve, reject) => {
+      reject('Not Implemented')
+    })
   }
 }
