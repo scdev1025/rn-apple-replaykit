@@ -3,7 +3,7 @@
 A React Native Package to access Replaykit on iOS, not support Android
 ## Getting started
 
-`$ npm install rn-apple-replaykit --save`
+`npm install --save https://github.com/scdev1025/rn-apple-replaykit.git`
 
 ### Mostly automatic installation
 
