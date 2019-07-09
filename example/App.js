@@ -20,14 +20,16 @@ export default class App extends Component {
     }
   }
 
-  onPressBroadCast() {    
-    if (this.state.isBroadCasting) {
+  onPressBroadCast() {
+    console.warn('test')
+    if (!this.state.isBroadCasting) {
       RNAppleReplayKit.startBroadcast()
-      .then(() => {
+      .then((res) => {
+        console.warn(res)
         this.setState({isBroadCasting: true})
       })
       .catch(err => {
-        console.warn(err)
+        console.warn(`${err}`)
       })
     } else {
       RNAppleReplayKit.stopBroadcast()

@@ -26,3 +26,10 @@ import RNAppleReplayKit from 'rn-apple-replaykit';
 RNAppleReplayKit;
 ```
   
+
+
+## Troubleshoot
+
+### Compile error : cannot find the basic classes from swift code
+It's because of the xcode issue.
+Please try to add new swift file on iOS project, and then try to build it.

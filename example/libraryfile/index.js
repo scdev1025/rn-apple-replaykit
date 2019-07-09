@@ -5,14 +5,10 @@ const { RNAppleReplaykit } = NativeModules;
 export default RNAReplayKit = {
   
   startBroadcast: () => {
-    return new Promise((resolve, reject) => {
-      reject('Not Implemented')
-    })
+    return RNAppleReplaykit.startBroadcast()
   },
 
   stopBroadcast: () => {
-    return new Promise((resolve, reject) => {
-      reject('Not Implemented')
-    })
+    return RNAppleReplaykit.stopBroadcast()
   }
 }

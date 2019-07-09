@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		B3E7B58A1CC2AC0600A0062D /* RNAppleReplaykit.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNAppleReplaykit.m */; };
+		D7415D9122D498D500CB0C25 /* ReplayKitManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D7415D9022D498D400CB0C25 /* ReplayKitManager.m */; };
+		D7A512F722D4E91300BD1E80 /* FileUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A512F622D4E91300BD1E80 /* FileUtil.swift */; };
+		D7A512F922D4EC8300BD1E80 /* ScreenRecordCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A512F822D4EC8300BD1E80 /* ScreenRecordCoordinator.swift */; };
+		D7A512FB22D4ED4A00BD1E80 /* ScreenRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A512FA22D4ED4A00BD1E80 /* ScreenRecorder.swift */; };
+		D7A512FD22D4ED6B00BD1E80 /* WindowUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A512FC22D4ED6B00BD1E80 /* WindowUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,6 +31,13 @@
 		134814201AA4EA6300B7C361 /* libRNAppleReplaykit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNAppleReplaykit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E7B5881CC2AC0600A0062D /* RNAppleReplaykit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNAppleReplaykit.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* RNAppleReplaykit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNAppleReplaykit.m; sourceTree = "<group>"; };
+		D7415D8F22D498D400CB0C25 /* ReplayKitManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReplayKitManager.h; sourceTree = "<group>"; };
+		D7415D9022D498D400CB0C25 /* ReplayKitManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReplayKitManager.m; sourceTree = "<group>"; };
+		D7415D9322D4992100CB0C25 /* RNAppleReplaykit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RNAppleReplaykit-Bridging-Header.h"; sourceTree = "<group>"; };
+		D7A512F622D4E91300BD1E80 /* FileUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileUtil.swift; sourceTree = "<group>"; };
+		D7A512F822D4EC8300BD1E80 /* ScreenRecordCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenRecordCoordinator.swift; sourceTree = "<group>"; };
+		D7A512FA22D4ED4A00BD1E80 /* ScreenRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenRecorder.swift; sourceTree = "<group>"; };
+		D7A512FC22D4ED6B00BD1E80 /* WindowUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,10 +62,25 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				D7A512F122D4E67800BD1E80 /* ScreenRecord */,
+				D7415D8F22D498D400CB0C25 /* ReplayKitManager.h */,
+				D7415D9022D498D400CB0C25 /* ReplayKitManager.m */,
 				B3E7B5881CC2AC0600A0062D /* RNAppleReplaykit.h */,
 				B3E7B5891CC2AC0600A0062D /* RNAppleReplaykit.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
+				D7415D9322D4992100CB0C25 /* RNAppleReplaykit-Bridging-Header.h */,
 			);
+			sourceTree = "<group>";
+		};
+		D7A512F122D4E67800BD1E80 /* ScreenRecord */ = {
+			isa = PBXGroup;
+			children = (
+				D7A512F622D4E91300BD1E80 /* FileUtil.swift */,
+				D7A512F822D4EC8300BD1E80 /* ScreenRecordCoordinator.swift */,
+				D7A512FA22D4ED4A00BD1E80 /* ScreenRecorder.swift */,
+				D7A512FC22D4ED6B00BD1E80 /* WindowUtil.swift */,
+			);
+			path = ScreenRecord;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +114,7 @@
 				TargetAttributes = {
 					58B511DA1A9E6C8500147676 = {
 						CreatedOnToolsVersion = 6.1.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -95,6 +123,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 58B511D21A9E6C8500147676;
@@ -112,7 +141,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7A512F722D4E91300BD1E80 /* FileUtil.swift in Sources */,
 				B3E7B58A1CC2AC0600A0062D /* RNAppleReplaykit.m in Sources */,
+				D7415D9122D498D500CB0C25 /* ReplayKitManager.m in Sources */,
+				D7A512FD22D4ED6B00BD1E80 /* WindowUtil.swift in Sources */,
+				D7A512F922D4EC8300BD1E80 /* ScreenRecordCoordinator.swift in Sources */,
+				D7A512FB22D4ED4A00BD1E80 /* ScreenRecorder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,32 +237,45 @@
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				HEADER_SEARCH_PATHS = (
-				"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SRCROOT)/../../../React/**",
-					"$(SRCROOT)/../../react-native/React/**",
-				);
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = RNAppleReplaykit;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		58B511F11A9E6C8500147676 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
 				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = RNAppleReplaykit;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RNAppleReplaykit-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		58B511F11A9E6C8500147676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../../React/**",
+					"$(SRCROOT)/../../react-native/React/**",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = RNAppleReplaykit;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RNAppleReplaykit-Bridging-Header.h";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
