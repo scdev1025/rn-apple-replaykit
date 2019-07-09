@@ -23,7 +23,7 @@ A React Native Package to access Replaykit on iOS, not support Android
 import RNAppleReplayKit from 'rn-apple-replaykit';
 ```
 
-####start broadcast
+#### Start broadcast
 ```javascript
 RNAppleReplayKit.startBroadcast()
 .then((res) => {
@@ -35,7 +35,7 @@ RNAppleReplayKit.startBroadcast()
 })
 ```
 
-####stop broadcast
+#### Stop broadcast
 ```javascript  
 RNAppleReplayKit.stopBroadcast()
 .then(() => {
