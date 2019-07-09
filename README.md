@@ -21,12 +21,30 @@ A React Native Package to access Replaykit on iOS, not support Android
 ## Usage
 ```javascript
 import RNAppleReplayKit from 'rn-apple-replaykit';
-
-// TODO: What to do with the module?
-RNAppleReplayKit;
 ```
-  
 
+####start broadcast
+```javascript
+RNAppleReplayKit.startBroadcast()
+.then((res) => {
+  console.warn(res)
+  this.setState({isBroadCasting: true})
+})
+.catch(err => {
+  console.warn(`${err}`)
+})
+```
+
+####stop broadcast
+```javascript  
+RNAppleReplayKit.stopBroadcast()
+.then(() => {
+  this.setState({isBroadCasting: false})
+})
+.catch(err => {
+  console.warn(err)
+})
+```
 
 ## Troubleshoot
 
